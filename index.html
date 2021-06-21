@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registro de carros</title>
+
+    <link rel="stylesheet" type="text/css" href="crud.css">
+  </head>
+  <body>
+    <div class="contenedor-crud-carros">
+      <div class="registro-carros-title">
+        <h1>Registro de carros</h1>
+      </div>
+      <div class="contenedor-formulario-carros">
+        <form action="" id="agregar-carro" class="formulario-carros">
+          <div class="agregar-carro">
+            <div class="campo">
+              <label for="id-carro">ID: </label>
+              <input type="number" placeholder="Id del carro" id="id-carro" required />
+            </div>
+            <div class="campo">
+              <label for="marca">Marca: </label>
+              <input type="text" placeholder="Marca del carro" id="marca" value="Nissan" required />
+            </div>
+            <div class="campo">
+              <label for="modelo">Modelo: </label>
+              <input type="text" placeholder="Modelo del carro" id="modelo" value="versa" required />
+            </div>
+            <div class="campo">
+              <label for="color">Color: </label>
+              <input type="text" placeholder="Color del carro" id="color" value="azul" required />
+            </div>
+            <div class="campo">
+              <label for="puertas">Puertas: </label>
+              <input type="text" placeholder="Puertas" id="puertas"  required />
+            </div>
+            <div class="campo">
+              <label for="brand">Brand: </label>
+              <input type="text" placeholder="Brand" id="brand" value="brandssss" required/>
+            </div>
+          </div>
+          <div class="contenedor-boton-crud">
+            <!-- <button type="submit" class="submitBtn boton-crud" id="submitBtn">
+              Registrar carro
+            </button> -->
+            <button class="submitBtn boton-crud" id="submitBtn">
+              Registrar carro
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="botones-crud">
+      <button id="editar-datos" class="editar-datos">Editar un registro</button>
+      <button id="borrar-datos" class="borrar-datos">Borrar un registro</button>
+    </div>
+    <div class="listar-carros" id="lista-carros"></div>
+    </div>
+    <div class="contenedor-borrar"></div>
+
+    <script src="crud.js"></script>
+  </body>
+</html>
